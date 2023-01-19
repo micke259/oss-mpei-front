@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './styles.css'
 import UserList, {UserProps} from "./UserList";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,10 +11,10 @@ const HomePage = () => {
         {id:'3', fio:"pidoras3", role:"govnoed3", details:"xzu"}
     ]
     return (
-        <>
+        <Fragment>
             <DrawerShit/>
             <UserList users={users}/>
-        </>
+        </Fragment>
     );
 };
 

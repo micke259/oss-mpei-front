@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC, Fragment, useState} from 'react';
 import Nav from "react-bootstrap/Nav";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Button from "react-bootstrap/Button"
@@ -11,7 +11,7 @@ const DrawerShit:FC = () => {
     const handleShow = () => setShow(true)
 
     return (
-        <>
+        <Fragment>
         <Button variant="outline-primary" onClick={handleShow}>Меню</Button>
 
         <Offcanvas show={show} onHide={handleClose} backdrop="static">
@@ -25,7 +25,7 @@ const DrawerShit:FC = () => {
                 </Nav>
             </Offcanvas.Body>
         </Offcanvas>
-        </>
+        </Fragment>
     );
 };
 
