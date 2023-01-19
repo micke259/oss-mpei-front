@@ -1,0 +1,19 @@
+.column{
+    color: green;
+    background-color: yellow;
+    border: 2px solid red;
+    margin: 15px;
+}
+
+.authForm{
+    width: 15vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40vw;
+    margin-top: 10px;
+}
+.LoginButton{
+    margin-left: 48vw;
+}
