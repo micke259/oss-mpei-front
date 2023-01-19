@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, {FC, useState} from 'react';
 import Nav from "react-bootstrap/Nav";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Button from "react-bootstrap/Button"
 
-const DrawerShit = () => {
+const DrawerShit:FC = () => {
 
     const [show, setShow] = useState(false)
 
