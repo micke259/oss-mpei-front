@@ -25,7 +25,7 @@ const SignIn = () => {
             <Form.Group  controlId="formBasicPassword">
                 <Form.Control onChange={e=>passwordHandler(e)} value={password} className="authForm" type="password" placeholder="Введите пароль" />
             </Form.Group>
-            <Button href='/home' className="authForm" variant="primary" type="submit">
+            <Button href='/admin' className="authForm" variant="primary" type="submit">
                 Войти
             </Button>
         </Form>

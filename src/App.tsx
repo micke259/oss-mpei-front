@@ -2,10 +2,11 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import HomePage from "./HomePage";
-import DetailInfo from "./DetailInfo";
 import SignIn from "./SignIn";
 import ProtectedRoutes from "./ProtectedRoutes";
-import DrawerShit from "./DrawerShit";
+import AdminPanel from "./admin/AdminPanel";
+import TaskDetail from "./admin/TaskDetail";
+import UserDetail from "./admin/UserDetail";
 
 
 
@@ -15,9 +16,10 @@ const App = () => {
             <Routes>
                 <Route path='*' element={<SignIn/>}/>
                 <Route element={<ProtectedRoutes/>}>
-                    <Route path="/home" element={<DrawerShit/>}/>
+                    <Route path="/admin" element={<AdminPanel/>}/>
                     <Route path="/homepage" element={<HomePage/>}/>
-                    <Route path="/details" element={<DetailInfo/>}/>
+                    <Route path="/UserDetail/:id" element={<UserDetail/>}/>
+                    <Route path="/tasks" element={<TaskDetail/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>

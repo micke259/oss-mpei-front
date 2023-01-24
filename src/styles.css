@@ -14,6 +14,37 @@
     margin-left: 40vw;
     margin-top: 10px;
 }
-.LoginButton{
+.LoginButton {
     margin-left: 48vw;
+}
+
+.menu-button{
+    margin-top: 10px;
+}
+
+.admin-header-container {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    display: flex;
+}
+
+.table-container {
+    width: 60vw;
+    margin-left: 15vw;
+}
+
+.container-column{
+    width: 8vw;
+}
+.image{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.table-container-details {
+    width: 60vw;
+    margin-left: 25vw;
 }
